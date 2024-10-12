@@ -10,19 +10,19 @@ import json
 
 # Load models and disease details
 models = {
-    'tomato': tf.keras.models.load_model("model\Tomato_model_v4.keras"),
-    'potato': tf.keras.models.load_model("model\Potato_model_v2.keras"),
-    'rice': tf.keras.models.load_model("model\Rice_model_v3.keras"),
-    'wheat': tf.keras.models.load_model("model\Tomato_model_v4.keras"),
-    'apple': tf.keras.models.load_model("model\Tomato_model_v4.keras")
+    'tomato': tf.keras.models.load_model("model/Tomato_model_v4.keras"),
+    'potato': tf.keras.models.load_model("model/Potato_model_v2.keras"),
+    'rice': tf.keras.models.load_model("model/Rice_model_v3.keras"),
+    'wheat': tf.keras.models.load_model("model/Tomato_model_v4.keras"),
+    'apple': tf.keras.models.load_model("model/Tomato_model_v4.keras")
 }
 
 disease_details = {
-    'tomato': json.load(open('data\TomatoDetails.json')),
-    'potato': json.load(open('data\PotatoDetails.json')),
-    'rice': json.load(open('data\RiceDetails.json')),
-    'wheat': json.load(open('data\TomatoDetails.json')),
-    'apple': json.load(open('data\TomatoDetails.json'))
+    'tomato': json.load(open('data/TomatoDetails.json')),
+    'potato': json.load(open('data/PotatoDetails.json')),
+    'rice': json.load(open('data/RiceDetails.json')),
+    'wheat': json.load(open('data/TomatoDetails.json')),
+    'apple': json.load(open('data/TomatoDetails.json'))
 }
 
 # Create the FastAPI application

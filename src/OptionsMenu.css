@@ -1,0 +1,26 @@
+.options-menu {
+    position: absolute; /* Position relative to the container */
+    top: 50px; /* Adjust to where you want it to appear */
+    right: 15px; /* Align it a bit away from the right edge */
+    background-color: white; /* Background color */
+    border: 1px solid #ccc; /* Border for the menu */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    z-index: 1000; /* Make sure it's on top */
+  }
+  
+  .options-menu ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .options-menu li {
+    padding: 10px 15px; /* Padding for each item */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .options-menu li:hover {
+    background-color: #f0f0f0; /* Hover effect */
+  }
+  

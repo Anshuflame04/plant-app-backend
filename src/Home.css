@@ -1,0 +1,78 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('path/to/flame-background.jpg') no-repeat center center/cover;
+  position: relative;
+  text-align: center; /* Center align text */
+}
+
+.image-container {
+  text-align: center;
+  animation: fadeInImage 2s ease-in-out; /* Cool animation for image */
+}
+
+.centered-image {
+  width: 80%; /* Smaller image size */
+  max-width: 200px; /* Max size for larger screens */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.image-text {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 10px;
+  animation: fadeInText 2s ease-in-out;
+  background-color: rgba(185, 81, 81, 0.6); /* Semi-transparent background */
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.welcome-text {
+  font-size: 28px; /* Adjust size for emphasis */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 15px; /* Space above the text */
+  color: #fff; /* Change text color */
+  animation: fadeInCool 3s ease-in-out; /* Optional animation */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 10px 15px; /* Padding around the welcome text */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Cool animation keyframes */
+@keyframes fadeInCool {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Start text lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End in original position */
+  }
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Start smaller */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Scale to original size */
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    letter-spacing: 2px; /* Cool letter spacing */
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: normal;
+  }
+}

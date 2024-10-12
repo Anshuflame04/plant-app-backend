@@ -1,0 +1,80 @@
+/* History.css */
+
+.history-page {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .history-title {
+    font-size: 28px;
+    color: #333; /* Dark color for title */
+    display: flex;
+    align-items: center;
+  }
+  
+  .history-icon {
+    margin-right: 10px; /* Spacing between icon and title */
+  }
+  
+  .history-list {
+    margin-top: 20px;
+  }
+  
+  .history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fff; /* White background for items */
+    border-radius: 5px; /* Rounded corners for items */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+  }
+  
+  .history-info {
+    flex-grow: 1; /* Allow info section to take available space */
+  }
+  
+  .history-item-title {
+    font-size: 20px;
+    color: #333; /* Dark color for item title */
+    margin: 0;
+  }
+  
+  .history-item-date {
+    font-size: 14px;
+    color: #666; /* Lighter color for date */
+  }
+  
+  .history-item-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: white; /* White text for status */
+  }
+  
+  .history-item-status.detected {
+    background-color: #e74c3c; /* Red for detected */
+  }
+  
+  .history-item-status.healthy {
+    background-color: #2ecc71; /* Green for healthy */
+  }
+  
+  .delete-button {
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    color: #e74c3c; /* Red color for delete */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .delete-icon {
+    margin-right: 5px; /* Spacing between icon and text */
+  }
+  

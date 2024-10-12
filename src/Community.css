@@ -1,0 +1,87 @@
+/* Community.css */
+body {
+    background-color: #fafafa;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  .community-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  .post {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 15px; /* Rounded corners */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s; /* Animation for hover */
+  }
+  
+  .post:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .post-header {
+    padding: 15px; /* More padding for a nicer look */
+    border-bottom: 1px solid #e6e6e6; /* Subtle divider */
+  }
+  
+  .username {
+    font-weight: bold;
+    font-size: 18px; /* Slightly larger font */
+    color: #333333; /* Darker text color */
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0; /* Rounded corners on top */
+  }
+  
+  .post-actions {
+    padding: 15px; /* Increased padding */
+  }
+  
+  .like-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Pill-shaped button */
+    padding: 10px 15px; /* Button padding */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  }
+  
+  .like-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .comment {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555555; /* Softer color for comments */
+  }
+  
+  .comment-input {
+    width: calc(100% - 10px);
+    padding: 10px; /* Padding for input */
+    border: 1px solid #dbdbdb;
+    border-radius: 20px; /* Pill-shaped input */
+    margin-top: 10px;
+    transition: border 0.3s; /* Smooth border transition */
+  }
+  
+  .comment-input:focus {
+    border: 1px solid #4CAF50; /* Green border on focus */
+    outline: none; /* Remove outline */
+  }
+  
